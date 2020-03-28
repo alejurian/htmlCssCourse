@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Producto 1</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/index.html"><img src="images/logo.png" alt="Logo"/></a>
+        <ul>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="product.html">Producto y descripción</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="form-product">
+      <div class="product-resume">
+        <div class="container-product-img">
+          <img src="images/box2.png" alt="Logo product" />
+        </div>
+        <h3>Product 1</h3>
+        <p>
+          Miles de productos hay en el mercado, pero nada como una caja con
+          gatitos
+        </p>
+      </div>
+      <form
+        action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KU7HY5Z4AX39G"
+        method="POST"
+      >
+        <label for="name">Nombre</label><br />
+        <input name="name" type="text" /><br />
+        <label for="email">Email</label><br />
+        <input name="email" type="email" /><br />
+        <label for="phone">Teléfono</label><br />
+        <input name="phone" type="tel" /><br />
+        <input type="hidden" name="cmd" value="_cart" />
+        <input type="hidden" name="business" value="seller@designerfotos.com" />
+        <input type="hidden" name="item_name" value="box" />
+        <input type="hidden" name="item_number" value="123" />
+        <input type="hidden" name="amount" value="15.00" />
+        <input type="hidden" name="first_name" value="John" />
+        <input type="hidden" name="last_name" value="Doe" />
+        <input type="hidden" name="address1" value="9 Elm Street" />
+        <input type="hidden" name="address2" value="Apt 5" />
+        <input type="hidden" name="city" value="Berwyn" />
+        <input type="hidden" name="state" value="PA" />
+        <input type="hidden" name="zip" value="19312" />
+        <input type="hidden" name="night_phone_a" value="610" />
+        <input type="hidden" name="night_phone_b" value="555" />
+        <input type="hidden" name="night_phone_c" value="1234" />
+        <button type="submit">Confirmar pago</button>
+      </form>
+    </section>
+    <footer>
+      <p>Términos y condiciones</p>
+      <p><a href="mailto:contacto@mail.com">contacto@mail.com</a></p>
+    </footer>
+  </body>
+</html>
